@@ -6,11 +6,7 @@ import adafruit_sgp30
 import adafruit_scd4x
 import requests
 
-# ----- Hue Setup -----
-BRIDGE_IP = "192.168.0.241"
-USERNAME = "QvpSl2f-rjT69huClZBDnHkyawCRZfEY16H9d-xR"
-LIGHT_ID = 2
-url = f"http://{BRIDGE_IP}/api/{USERNAME}/lights/{LIGHT_ID}/state"
+
 
 # ----- I2C Setup -----
 i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
